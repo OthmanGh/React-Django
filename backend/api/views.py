@@ -7,7 +7,7 @@ from .models import Note
 
 
 
-class NoteListClass(generics.ListCreateAPIView):
+class NoteListCreate(generics.ListCreateAPIView):
     serializer_class = NoteSerializer
     permission_classes = [IsAuthenticated]
 
